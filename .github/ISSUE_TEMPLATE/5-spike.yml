@@ -1,0 +1,24 @@
+name: Spike
+description: A time-boxed question to answer, with a written outcome.
+type: Spike
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Time box
+      placeholder: e.g. 1 day
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Where the answer will be written
+      description: Usually an ADR in docs/decisions/.
+    validations:
+      required: true

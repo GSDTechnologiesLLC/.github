@@ -1,0 +1,28 @@
+name: Feature
+description: A user-visible capability or outcome. Break it into Task sub-issues.
+type: Feature
+body:
+  - type: textarea
+    id: who-what
+    attributes:
+      label: Who it's for and what they can do afterwards
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Each one checkable by a test or a clear observation.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+  - type: textarea
+    id: links
+    attributes:
+      label: Decisions and specs
+      description: Links to ADRs, specs, or the requirement this comes from.

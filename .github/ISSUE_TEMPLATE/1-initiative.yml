@@ -1,0 +1,22 @@
+name: Initiative
+description: A goal above features, usually weeks to months of work.
+type: Initiative
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What we're trying to achieve and why it matters now.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: How we'll know it's done
+      description: Observable outcomes, not a task list. Features are added as sub-issues.
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
